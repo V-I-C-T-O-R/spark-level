@@ -14,7 +14,10 @@ class SpringBootScalaApplication extends SpringBootServletInitializer{
     override def configure(application: SpringApplicationBuilder): SpringApplicationBuilder = application.sources(classOf[SpringBootScalaApplication])
 }
 
-/*object SpringBootScalaApplication extends App {
+/*@SpringBootApplication
+class SpringBootScalaApplication
+
+object SpringBootScalaApplication extends App {
     SpringApplication.run(classOf[SpringBootScalaApplication])
 }*/
 
